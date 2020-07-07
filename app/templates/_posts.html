@@ -2,7 +2,7 @@
     {% for post in posts %}
     <li class="post">
         <div class="post-thumbnail">
-            <a href="{{ url_for('.user', username=post.author.username) }}">
+<a href="{{ url_for('.user', username=post.author.username) }}">
                 <img class="img-rounded profile-thumbnail" src="{{ post.author.gravatar(size=40) }}">
             </a>
         </div>
@@ -28,6 +28,9 @@
                 {% endif %}
                 <a href="{{ url_for('.post', id=post.id) }}">
                     <span class="label label-default">Permalink</span>
+                </a>
+                <a href="{{ url_for('.post', id=post.id) }}#comments">
+                    <span class="label label-primary">{{ post.comments.count() }} Comments</span>
                 </a>
             </div>
         </div>

@@ -3,3 +3,7 @@ __pycache__/
 __pycache__/*
 venv/
 venv/*
+migrations/
+migrations/*
+tmp/
+tmp/*
