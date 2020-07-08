@@ -7,3 +7,5 @@ migrations/
 migrations/*
 tmp/
 tmp/*
+manage.out
+deploy
